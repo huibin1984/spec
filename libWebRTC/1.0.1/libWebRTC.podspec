@@ -23,7 +23,7 @@ webrtc(google opensource) is p2p video chat framework
   s.homepage         = 'https://github.com/animeng/libWebRTC'
   s.license          = 'MIT'
   s.author           = { 'wang animeng' => 'animeng68@gmail.com' }
-  s.source           = { :git => 'https://github.com/animeng/libWebRTC.git', :tag => '1.0.1' }
+  s.source           = { :git => 'https://github.com/animeng/libWebRTC.git' }
   s.social_media_url = 'http://weibo.com/mengtnt'
   s.platform     = :ios, "8.0"
 
