@@ -23,14 +23,15 @@ webrtc(google opensource) is p2p video chat framework
 
   s.homepage         = 'https://github.com/huibin1984/libWebRTC'
   s.license          = 'MIT'
-  s.author           = { 'wang animeng' => 'animeng68@gmail.com' }
+  s.author           = { 'huibin' => 'huibin1984@gmail.com' }
   s.source           = { :git => 'https://github.com/huibin1984/libWebRTC.git' }
-  s.social_media_url = 'http://weibo.com/mengtnt'
+  s.social_media_url = 'http://weibo.com/huibin1984'
   s.platform     = :ios, "8.0"
 
   s.xcconfig = { 
-    'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/**"', 
-    'GCC_PREPROCESSOR_DEFINITIONS' => "WEBRTC_POSIX LOGGING=1 FEATURE_ENABLE_SSL SYSTEM_NATIVELY_SIGNALS_MEMORY_PRESSURE IOS WEBRTC_IOS CARBON_DEPRECATED=YES USE_OPENSSL=1 NDEBUG NVALGRIND" 
+    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Pod/**"', 
+    'GCC_PREPROCESSOR_DEFINITIONS' => "WEBRTC_POSIX LOGGING=1 FEATURE_ENABLE_SSL SYSTEM_NATIVELY_SIGNALS_MEMORY_PRESSURE IOS WEBRTC_IOS CARBON_DEPRECATED=YES USE_OPENSSL=1 NDEBUG NVALGRIND",
+    'OTHER_LDFLAGS' => '-ObjC'
   }
   s.source_files = [
     "Pod/Headers/*.h", 
