@@ -6,9 +6,9 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name             = 'huibin-webrtc'
-  s.version          = '1'
-  s.summary          = 'the webrtc lib with huibin extension'
+  s.name             = 'libWebRTC'
+  s.version          = '1.0.4'
+  s.summary          = 'webrtc lib'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
