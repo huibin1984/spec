@@ -6,9 +6,9 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name             = 'libWebRTC'
-  s.version          = '1.0.3'
-  s.summary          = 'static library of webrtc.'
+  s.name             = 'huibin-webrtc'
+  s.version          = '1'
+  s.summary          = 'the webrtc lib with huibin extension'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,7 +28,7 @@ webrtc(google opensource) is p2p video chat framework
   s.platform     = :ios, "8.0"
 
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}"' }
-  s.source_files = "Pod/WebRTC.framework/Headers"
+  s.source_files = "Pod/WebRTC.framework/Headers", "Pod/webrtc/video_frame.h", "Pod/webrtc/typedefs.h", "Pod/webrtc/common_types.h", "Pod/webrtc/base/*.h", "Pod/webrtc/media/base/*.h", "Pod/webrtc/common_video/include/*.h", "Pod/webrtc/common_video/*.h"
   s.vendored_frameworks = "Pod/WebRTC.framework"
   s.library = 'icucore','c++','stdc++.6','sqlite3'
   s.frameworks = 'UIKit','Security','CFNetwork','GLKit','AudioToolbox','AVFoundation','CoreAudio','CoreMedia','CoreVideo','CoreGraphics','OpenGLES','QuartzCore'
