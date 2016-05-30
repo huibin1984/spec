@@ -1,3 +1,4 @@
+
 #
 # Be sure to run `pod lib lint webrtcLib.podspec' to ensure this is a
 # valid spec before submitting.
@@ -29,16 +30,16 @@ webrtc(google opensource) is p2p video chat framework
 
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/**"' }
   s.source_files = [
-    "Pod/WebRTC.framework/Headers", 
-    "Pod/webrtc/video_frame.h", 
-    "Pod/webrtc/typedefs.h",
-    "Pod/webrtc/common_types.h",
-    "Pod/webrtc/base/*.h", 
-    "Pod/webrtc/media/base/*.h",
-    "Pod/webrtc/common_video/include/*.h",
-    "Pod/webrtc/common_video/*.h",
-    "Pod/webrtc/modules/audio_device/ios/objc/RTCAudioSession.h", 
-    "Pod/webrtc/modules/audio_device/ios/objc/RTCAudioSessionConfiguration.h"
+    "Pod/WebRTC.framework/Headers/*.h", 
+    "Pod/WebRTC.framework/Headers/webrtc/video_frame.h", 
+    "Pod/WebRTC.framework/Headers/webrtc/typedefs.h",
+    "Pod/WebRTC.framework/Headers/webrtc/common_types.h",
+    "Pod/WebRTC.framework/Headers/webrtc/base/*.h", 
+    "Pod/WebRTC.framework/Headers/webrtc/media/base/*.h",
+    "Pod/WebRTC.framework/Headers/webrtc/common_video/include/*.h",
+    "Pod/WebRTC.framework/Headers/webrtc/common_video/*.h",
+    "Pod/WebRTC.framework/Headers/webrtc/modules/audio_device/ios/objc/RTCAudioSession.h", 
+    "Pod/WebRTC.framework/Headers/webrtc/modules/audio_device/ios/objc/RTCAudioSessionConfiguration.h"
     ]
   s.vendored_frameworks = "Pod/WebRTC.framework"
   s.library = 'icucore','c++','stdc++.6','sqlite3'
