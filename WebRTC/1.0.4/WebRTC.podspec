@@ -43,11 +43,14 @@ webrtc(google opensource) is p2p video chat framework
     "Pod/webrtc/common_video/include/*.h",
     "Pod/webrtc/common_video/*.h",
     "Pod/webrtc/system_wrappers/include/*.h",
+    "Pod/webrtc/modules/audio_device/ios/objc/RTCAudioSession.h",
+    "Pod/webrtc/modules/audio_device/ios/objc/RTCAudioSessionConfiguration.h",
     ]
   s.vendored_frameworks = "Pod/lib/WebRTC.framework"
   s.public_header_files = 'Pod/lib/WebRTC.framework/Headers/*.h',
   s.library = 'icucore','c++','stdc++.6','sqlite3'
   s.frameworks = 'UIKit','Security','CFNetwork','GLKit','AudioToolbox','AVFoundation','CoreAudio','CoreMedia','CoreVideo','CoreGraphics','OpenGLES','QuartzCore'
+  s.
   s.module_name = 'WebRTC'
 
   s.requires_arc     = true
